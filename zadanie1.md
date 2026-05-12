@@ -223,19 +223,19 @@ CMD ["npm", "start"]
 3. Polecenia.
 
 a) Budowanie opracowanego obrazu kontenera:
-```
+```bash
 docker build -t zadanie1 .
 ```
 b) Uruchomienie kontenera na podstawie zbudowanego obrazu:
-```
+```bash
 docker run -d -p 8080:8080 --name zadanie1-container zadanie1
 ```
 c) Uzyskanie informacji z logów:
-```
+```bash
 docker logs zadanie1-container
 ```
 d) Sprawdzenie, ile warstw posiada obraz i jaki jest obrazu:
-```
+```bash
 docker history zadanie1
 docker images
 ```
